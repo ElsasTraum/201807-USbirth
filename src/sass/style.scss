@@ -39,6 +39,7 @@ $mark-blue: rgb(133, 166, 189);
 body {
   font-family: $font-family-sans-serif;
   font-size: 16px;
+  line-height: 1.6;
   background-color: $gray-300;
 }
 
@@ -79,6 +80,10 @@ ul {
 }
 
 /* ------ Post ------ */
+.post {
+  margin-bottom: 3rem;
+}
+
 .post-info {
   margin: .3em 0;
 }
@@ -88,9 +93,16 @@ ul {
   margin: .3em 0;
 }
 
+.post-img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid $gray-700;
+}
+
 /* ------ Freetalk ------ */
 
 .freetalk {
+  text-align: center;
   margin-top: 5rem;
   padding-top: 30px;
   border-top: 1px solid $gray-200;
@@ -136,7 +148,7 @@ ul {
   }
 
   > li {
-    margin-top: 3em;
+    // margin-top: 3em;
   }
 }
 
