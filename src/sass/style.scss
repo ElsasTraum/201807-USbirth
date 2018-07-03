@@ -1,0 +1,170 @@
+/* *************************************
+//
+//   AURORA -- Layout
+//   -> 格局框架設定
+//
+//   00. Theme
+//   01. Base
+//   02. Layout
+//   03. Module
+//   04. Partial
+//
+// ************************************/
+
+/* -------------------------------------
+//   00. Theme
+// ---------------------------------- */
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, Noto Sans CJK TC,
+  sourcehansans-tc, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+/* ------ colors ------ */
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$mark-blue: rgb(133, 166, 189);
+
+/* -------------------------------------
+//   01. Base
+// ---------------------------------- */
+body {
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  background-color: $gray-300;
+}
+
+p {
+  margin: 0 0 1.25rem;
+}
+
+ul {
+  padding: 0;
+}
+
+/* -------------------------------------
+//   02.Layout
+// ---------------------------------- */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-post {
+  padding: 15px 30px;
+  background-color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .container-post {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* ------ Post ------ */
+.post-info {
+  margin: .3em 0;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  margin: .3em 0;
+}
+
+/* ------ Freetalk ------ */
+
+.freetalk {
+  margin-top: 5rem;
+  padding-top: 30px;
+  border-top: 1px solid $gray-200;
+}
+
+.hbd {
+  font-size: 3rem;
+  font-family: "Allura", cursive;
+  margin-bottom: 1em;
+}
+
+.author {
+  color: $gray-600;
+  margin: 0 0 .8em;
+}
+
+@media screen and (max-width: 576px) {
+  .hbd {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hbd {
+    font-size: 5rem;
+  }
+}
+
+/* -------------------------------------
+//   03. Module
+// ---------------------------------- */
+.comment-board {
+  border-top: 1px solid $gray-200;
+
+  ul {
+    padding-left: 2em;
+    border-left: 2px solid lighten($mark-blue, 25%);
+  }
+
+  li {
+    list-style-type: none;
+    margin: 1em 0;
+  }
+
+  > li {
+    margin-top: 3em;
+  }
+}
+
+.user,
+.pub-time {
+  font-size: .85em;
+}
+
+.user {
+  color: $mark-blue;
+
+  &-post {
+    color: darken($mark-blue, 30%);
+    font-weight: 700;
+  }
+
+  .fa-pencil-alt {
+    color: darken($mark-blue, 30%);
+    margin-right: .5em;
+  }
+}
+
+.pub-time {
+  color: $gray-600;
+}
+
+@media screen and (max-width: 576px) {
+  .comment-board ul {
+    padding-left: 1em;
+  }
+}
