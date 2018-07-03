@@ -1,0 +1,28 @@
+{
+  "name": "ESi-201804-AURORA",
+  "version": "1.0.0",
+  "description": "AURORA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ https://ElsaCheng@bitbucket.org/ElsaCheng/esi-201804-aurora.git"
+  },
+  "author": "Elsa Cheng",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ElsaCheng/esi-201804-aurora/src/master/README.md",
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-slim": "^0.3.0",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "devDependencies": {
+    "stylelint": "^9.2.1",
+    "stylelint-config-standard": "^18.2.0"
+  }
+}
