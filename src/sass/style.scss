@@ -14,8 +14,7 @@
 /* -------------------------------------
 //   00. Theme
 // ---------------------------------- */
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, Noto Sans CJK TC,
-  sourcehansans-tc, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, Noto Sans CJK TC, sourcehansans-tc, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 /* ------ colors ------ */
 
@@ -148,7 +147,11 @@ ul {
   }
 
   > li {
-    // margin-top: 3em;
+    margin-top: 3em;
+
+    &:first-of-type {
+      margin-top: 1em;
+    }
   }
 }
 
@@ -158,21 +161,20 @@ ul {
 }
 
 .user {
-  color: $mark-blue;
+  color: rgb(255, 69, 0);
 
   &-post {
-    color: darken($mark-blue, 30%);
     font-weight: 700;
   }
 
   .fa-pencil-alt {
-    color: darken($mark-blue, 30%);
-    margin-right: .5em;
+    color: rgb(36, 160, 237);
   }
 }
 
 .pub-time {
   color: $gray-600;
+  margin-left: .5em;
 }
 
 @media screen and (max-width: 576px) {
